@@ -1,6 +1,6 @@
-let express = require('express');
-let path =  require('path');
-let open = require('open');
+import express from 'express';
+import path from 'path';
+import open from 'open';
 
 const port = 3000;
 let app = express();
@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, err => {
-    if(err) {
+    if (err) {
         console.error(err);
     } else {
         open('http://localhost:' + port);
