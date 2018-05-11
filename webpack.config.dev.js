@@ -5,6 +5,7 @@ export default {
     entry: [
         path.resolve(__dirname, 'src/index')
     ],
+    watch: true,
     target: 'web',
     output: {
         path: path.resolve(__dirname, 'src'),
