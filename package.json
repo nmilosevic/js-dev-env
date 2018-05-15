@@ -24,6 +24,7 @@
     "eslint-watch": "^3.1.2",
     "express": "^4.15.4",
     "extract-text-webpack-plugin": "^3.0.0",
+    "faker": "^4.1.0",
     "jsdom": "^11.2.0",
     "json-schema-faker": "^0.5.0-rc11",
     "json-server": "^0.12.0",
@@ -43,7 +44,7 @@
   },
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-check open:src lint:watch test:watch",
+    "start": "npm-run-all --parallel security-check open:src lint:watch test:watch start-mockapi",
     "open:src": "babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
@@ -51,6 +52,9 @@
     "lint": "esw webpack.config.* src buildScripts",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "generate-mock-data": "babel-node buildScripts/generateMockData",
+    "prestart-mockapi": "npm run generate-mock-data",
+    "start-mockapi": "json-server --watch src/api/db.json --port 3001"
   }
 }
