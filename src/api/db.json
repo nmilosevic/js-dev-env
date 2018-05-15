@@ -1,22 +1,3 @@
 {
-  "users": [
-    {
-      "id": 26169239,
-      "firstName": "Maryse",
-      "lastName": "Towne",
-      "email": "Kory73@hotmail.com"
-    },
-    {
-      "id": 46028528,
-      "firstName": "Cassie",
-      "lastName": "Walsh",
-      "email": "Orland68@hotmail.com"
-    },
-    {
-      "id": 11552488,
-      "firstName": "Viola",
-      "lastName": "Hilpert",
-      "email": "Denis57@gmail.com"
-    }
-  ]
+  "users": []
 }
