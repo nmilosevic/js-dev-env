@@ -4,17 +4,21 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
     devtool: 'source-map',
-    entry: [
-        path.resolve(__dirname, 'src/index')
-    ],
+    entry: {
+        main: path.resolve(__dirname, 'src/index'),
+        vendor: path.resolve(__dirname, 'src/index')
+    },
     watch: true,
     target: 'web',
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
-        filename: 'bundle.js'
+        filename: '[name].js'
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendor'
+        }),
         new webpack.optimize.UglifyJsPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/index.html',
