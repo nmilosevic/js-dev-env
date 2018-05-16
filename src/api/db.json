@@ -1,3 +1,22 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": 31561541,
+      "firstName": "Corene",
+      "lastName": "Metz",
+      "email": "Myrtie_Mitchell40@hotmail.com"
+    },
+    {
+      "id": 76127494,
+      "firstName": "Dedric",
+      "lastName": "Hansen",
+      "email": "Laurie_Bergnaum44@yahoo.com"
+    },
+    {
+      "id": 85209461,
+      "firstName": "Rodger",
+      "lastName": "Lind",
+      "email": "Xzavier.Rodriguez2@gmail.com"
+    }
+  ]
 }
