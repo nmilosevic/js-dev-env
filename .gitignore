@@ -58,7 +58,5 @@ typings/
 .env
 
 # webpack bundles
-dist/*.js
-dist/*.map
-dist/*.html
+dist/*.*
 
