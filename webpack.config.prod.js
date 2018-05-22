@@ -39,7 +39,8 @@ export default {
                 minifyCSS: true,
                 minifyURLs: true
             },
-            inject: true
+            inject: true,
+            gaTrackingId: "UA-119688053-1"
         })
     ],
     module: {
