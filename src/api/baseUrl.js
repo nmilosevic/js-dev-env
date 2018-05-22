@@ -1,5 +1,5 @@
 export default function getBaseUrl() {
-    return getQuerytringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+    return getQuerytringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://immense-peak-30327.herokuapp.com/';
 }
 
 function getQuerytringParameterByName(name, url) {
